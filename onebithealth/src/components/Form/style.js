@@ -45,7 +45,11 @@ const styles = StyleSheet.create({
         color:"#FF0000",
         fontWeight:"bold",
         paddingLeft:20,
-    }
+    },
+    exibitionResultImc:{
+        width:"100%",
+        height:"50%"
+    },
 });
 
 export default styles
