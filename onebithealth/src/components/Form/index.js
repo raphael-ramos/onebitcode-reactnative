@@ -94,12 +94,22 @@ export default function Form() {
                 >
                     <Text style={styles.textButtonCalculator}>{textButton}</Text>
                 </TouchableOpacity>
-                <FlatList
-                    style={styles.listImcs}
-                    data={imcList.reverse()}
-                ></FlatList>
             </View>
             }
+            <FlatList
+                showsVerticalScrollIndicator={false}
+                style={styles.listImcs}
+                data={imcList.reverse()}
+                renderItem={({item}) => {
+                    return(
+                        <Text style={styles.resultImcItem}>
+                            <Text style={styles.textResultItemList}>Resultado IMC = </Text>
+                            {item.imc}
+                        </Text>
+                    )
+                }}
+                keyExtractor={(item)=>{item.id}}
+            ></FlatList>
         </View>
     );
 }
