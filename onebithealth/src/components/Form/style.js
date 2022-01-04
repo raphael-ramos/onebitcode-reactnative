@@ -2,20 +2,15 @@ import {StyleSheet} from 'react-native'
 
 const styles = StyleSheet.create({
     formContext:{
-        width:"100%",
-        height:"100%",
-        bottom:0,
+        flex:1,
         backgroundColor:"#ffffff",
         alignItems:'center',
         borderTopLeftRadius:30,
         borderTopRightRadius:30,
-        marginTop:30,
+        paddingTop:30,
     },
     form:{
         width:"100%",
-        height:"auto",
-        marginTop:30,
-        padding:10,
     },
     formLabel:{
         color:"#000000",
@@ -50,7 +45,25 @@ const styles = StyleSheet.create({
         color:"#FF0000",
         fontWeight:"bold",
         paddingLeft:20,
-    }
+    },
+    exibitionResultImc:{
+        width:"100%",
+        height:"50%"
+    },
+    listImcs:{
+        marginTop:20,
+    },
+    resultImcItem:{
+        fontSize:26,
+        color:"red",
+        height:50,
+        width:"100%",
+        paddingRight:20,
+    },
+    textResultItemList:{
+        fontSize:16,
+        color:"red",
+    },
 });
 
 export default styles
